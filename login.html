@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión - Mi Tienda Pc gamer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap Icons (opcional para el ícono) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style-login.css">
+</head>
+<body>
+  <main class="login-container">
+    <div class="login-brand">
+      <img src="imagenes/pixelogo.png" alt="Logo Gamer Tienda de Computadoras" />
+      <span class="brand-name">Mi Tienda Pc gamer</span>
+    </div>
+    <h1 class="login-title">Iniciar Sesión</h1>
+    <form>
+        <input type="text" class="form-control" placeholder="Nombre Completo">
+      <input type="email" class="form-control" placeholder="Correo electrónico" maxlength="100" pattern="^([a-zA-Z0-9._%+-]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com))$" required autofocus>
+      <input type="password" class="form-control" placeholder="Contraseña" minlength="4" maxlength="10" required>
+      <a href="rest_passt.html" class="rest-password">¿Olvidaste tu contraseña?</a>
+      <button type="submit" class="btn-sign-in">
+        <i class="bi bi-box-arrow-in-right"></i> Ingresar
+      </button>
+    </form>
+    <div class="sign-in-to-sign-up">
+      <p class="cuenta">¿No tienes una cuenta?</p>
+      <a href="sign-up.html" class="red-sign-up">Regístrate</a>
+    </div>
+  </main>
+</body>
+</html>

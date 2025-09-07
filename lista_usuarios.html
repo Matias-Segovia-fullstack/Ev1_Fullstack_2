@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Administrar Usuarios - Mi Tienda Pc gamer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style_list_usua.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <!-- Menú lateral -->
+    <aside class="sidebar-box">
+      <div class="sidebar-logo">
+        <img src="imagenes/pixelogo.png" alt="Logo Admin" />
+        <span class="brand-name">Mi Tienda Pc gamer</span>
+      </div>
+      <nav class="menu">
+        <a href="homeAdministrador.html" class="menu-item"><i class="bi bi-house"></i> <span>Inicio</span></a>
+        <a href="listaProductos.html" class="menu-item"><i class="bi bi-box-seam"></i> <span>Productos</span></a>
+        <a href="#" class="menu-item active"><i class="bi bi-people"></i> <span>Usuarios</span></a>
+        <a href="pedidos.html" class="menu-item"><i class="bi bi-card-checklist"></i> <span>Pedidos</span></a>
+        <a href="#" class="menu-item"><i class="bi bi-bar-chart"></i> <span>Estadísticas</span></a>
+        <a href="#" class="menu-item"><i class="bi bi-gear"></i> <span>Ajustes</span></a>
+        <a href="#" class="menu-item logout"><i class="bi bi-box-arrow-right"></i> <span>Salir</span></a>
+      </nav>
+    </aside>
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <div class="usuarios-header">
+        <h1>Usuarios</h1>
+        <button class="btn-crear-usuario" onclick="location.href='crear_usuario.html'"><i class="bi bi-person-plus"></i> Crear usuario</button>
+      </div>
+      <div class="usuarios-table-wrapper">
+        <table class="usuarios-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Avatar</th>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Rol</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Ejemplo de usuarios (esto debería venir de la base de datos en la práctica) -->
+            <tr>
+              <td>1</td>
+              <td><img src="imagenes/avatar_admin.png" alt="Usuario 1" class="usuario-avatar"></td>
+              <td>Ana Fernández</td>
+              <td>ana@mitienda.cl</td>
+              <td>Administrador</td>
+              <td>
+                <button class="btn-editar-usuario"><i class="bi bi-pencil"></i> Editar</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="imagenes/avatar_cliente.png" alt="Usuario 2" class="usuario-avatar"></td>
+              <td>Carlos Soto</td>
+              <td>carlos@gmail.com</td>
+              <td>Cliente</td>
+              <td>
+                <button class="btn-editar-usuario"><i class="bi bi-pencil"></i> Editar</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="imagenes/avatar_cliente.png" alt="Usuario 3" class="usuario-avatar"></td>
+              <td>Valeria Ruiz</td>
+              <td>valeria@duoc.cl</td>
+              <td>Cliente</td>
+              <td>
+                <button class="btn-editar-usuario"><i class="bi bi-pencil"></i> Editar</button>
+              </td>
+            </tr>
+            <!-- Más usuarios aquí -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

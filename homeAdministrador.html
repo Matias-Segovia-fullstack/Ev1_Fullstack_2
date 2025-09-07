@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Administrador - Mi Tienda Pc gamer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap Icons (opcional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style_administrador.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <!-- Menú lateral en un cuadro a la izquierda -->
+    <aside class="sidebar-box">
+      <div class="sidebar-logo">
+        <img src="imagenes/pixelogo.png" alt="Logo Admin" />
+        <span class="brand-name">Mi Tienda Pc gamer</span>
+      </div>
+      <nav class="menu">
+        <a href="#" class="menu-item active"><i class="bi bi-house"></i> <span>Inicio</span></a>
+        <a href="listaProductos.html" class="menu-item"><i class="bi bi-box-seam"></i> <span>Productos</span></a>
+        <a href="lista_usuarios.html" class="menu-item"><i class="bi bi-people"></i> <span>Usuarios</span></a>
+        <a href="pedidos.html" class="menu-item"><i class="bi bi-card-checklist"></i> <span>Pedidos</span></a>
+        <a href="#" class="menu-item"><i class="bi bi-bar-chart"></i> <span>Estadísticas</span></a>
+        <a href="#" class="menu-item"><i class="bi bi-gear"></i> <span>Ajustes</span></a>
+        <a href="#" class="menu-item logout"><i class="bi bi-box-arrow-right"></i> <span>Salir</span></a>
+      </nav>
+    </aside>
+    <!-- Contenido principal centrado -->
+    <main class="main-content">
+      <h1>Bienvenido, Administrador</h1>
+      <p>Selecciona una opción del menú para comenzar a gestionar la tienda.</p>
+      <div class="admin-widgets">
+        <div class="widget">
+          <i class="bi bi-box-seam"></i>
+          <div>
+            <span class="widget-title">Productos</span>
+            <span class="widget-value">125</span>
+          </div>
+        </div>
+        <div class="widget">
+          <i class="bi bi-people"></i>
+          <div>
+            <span class="widget-title">Usuarios</span>
+            <span class="widget-value">320</span>
+          </div>
+        </div>
+        <div class="widget">
+          <i class="bi bi-card-checklist"></i>
+          <div>
+            <span class="widget-title">Pedidos</span>
+            <span class="widget-value">58</span>
+          </div>
+        </div>
+      </div>
+      <!-- Más contenido puede ir aquí -->
+    </main>
+  </div>
+</body>
+</html>

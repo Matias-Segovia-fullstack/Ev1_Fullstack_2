@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Producto - Mi Tienda Pc gamer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style_crear_producto.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <!-- Menú lateral -->
+    <aside class="sidebar-box">
+      <div class="sidebar-logo">
+        <img src="imagenes/pixelogo.png" alt="Logo Admin" />
+        <span class="brand-name">Mi Tienda Pc gamer</span>
+      </div>
+      <nav class="menu">
+        <a href="homeAdministrador.html" class="menu-item"><i class="bi bi-house"></i> <span>Inicio</span></a>
+        <a href="listaProductos.html" class="menu-item"><i class="bi bi-box-seam"></i> <span>Productos</span></a>
+        <a href="lista_usuarios.html" class="menu-item"><i class="bi bi-people"></i> <span>Usuarios</span></a>
+        <a href="pedidos.html" class="menu-item"><i class="bi bi-card-checklist"></i> <span>Pedidos</span></a>
+        <a href="#" class="menu-item"><i class="bi bi-bar-chart"></i> <span>Estadísticas</span></a>
+        <a href="#" class="menu-item"><i class="bi bi-gear"></i> <span>Ajustes</span></a>
+        <a href="#" class="menu-item logout"><i class="bi bi-box-arrow-right"></i> <span>Salir</span></a>
+      </nav>
+    </aside>
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <div class="crear-producto-header">
+        <h1><i class="bi bi-plus-circle"></i> Crear nuevo producto</h1>
+        <a href="listaProductos.html" class="volver-link"><i class="bi bi-arrow-left"></i> Volver al listado</a>
+      </div>
+      <form class="crear-producto-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre del producto</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required maxlength="80" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria" class="form-control" required>
+              <option value="">Seleccione categoría</option>
+              <option value="Computadores">Computadores</option>
+              <option value="Tarjetas de Video">Tarjetas de Video</option>
+              <option value="Periféricos">Periféricos</option>
+              <option value="Monitores">Monitores</option>
+              <option value="Almacenamiento">Almacenamiento</option>
+              <option value="Accesorios">Accesorios</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="precio">Precio ($ CLP)</label>
+            <input type="number" id="precio" name="precio" class="form-control" required min="0" step="100">
+          </div>
+          <div class="form-group">
+            <label for="stock">Stock</label>
+            <input type="number" id="stock" name="stock" class="form-control" required min="0" step="1">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group form-group-full">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" class="form-control" rows="3" maxlength="300" required></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group form-group-full">
+            <label for="imagen">Imagen del producto</label>
+            <input type="file" id="imagen" name="imagen" class="form-control" accept="image/*" required>
+          </div>
+        </div>
+        <button type="submit" class="btn-crear-producto-form"><i class="bi bi-check-circle"></i> Crear producto</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
