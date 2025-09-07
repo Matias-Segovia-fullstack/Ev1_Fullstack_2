@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda de PCs - Ejemplo Bootstrap</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container position-relative justify-content-center">
+      <a class="navbar-brand" href="#">Mi Tienda Pc gamer</a>
+      <a class="navbar-brand mx-auto d-block" href="#">
+        <img src="imagenes.local/pixel.png" alt="Logo Gamer Tienda de Computadoras" style="height: 170px; margin-right:83px;">
+      </a>
+      <button class="btn btn-login me-2 position-absolute end-0">
+        <i class="bi bi-person"></i> Iniciar sesión
+      </button>
+    </div>
+  </nav>
+
+  <!-- banner Cultura gamer -->
+  <div class="container mt-3">
+    <div class="gamer-alert">
+      <span class="gamer-icon"><i class="bi bi-controller"></i></span>
+      <strong>Cultura Gamer:</strong>
+      <a href="https://www.ubisoft.com/es-mx/game/rainbow-six/siege/news-updates" target="_blank" class="gamer-link">
+        Revisa el último parche de Rainbow Six siege
+      </a>
+      <div class="r6s-characters">
+        <img src="imagenes.local/Rainbow-Six-Symbol.png" alt="logo">
+      </div>
+    </div>
+  </div> 
+
+  <!--Carrito-->
+  <nav>
+    <button class="btn btn-add-cart w-100">🛒 Agregar al carrito</button>
+  </nav>
+
+  <!-- Título principal -->
+  <div class="container my-4">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Computadoras <strong>Gamer</strong> Armadas</h2>
+      <button class="btn btn-success">Filtrar componentes</button>
+    </div>
+  </div>
+
+  <!-----------------------------------banner de grandes ofertas---------------------------------->
+  <div class="container my-5">
+    <div class="ofertas-banner p-4 rounded-4 mb-4 text-center">
+      <h2 class="text-neon mb-3">
+        <i class="bi bi-lightning-fill"></i> GRANDES OFERTAS <i class="bi bi-lightning-fill"></i>
+      </h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+        <!-- Producto 1 -->
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0 oferta-card">
+            <img src="https://m.media-amazon.com/images/I/71ybtvmLmDL.jpg" class="card-img-top img-fluid" alt="Auriculares Gamer HyperX Cloud II">
+            <div class="card-body bg-dark rounded-bottom">
+              <h6 class="text-muted small">Auriculares HyperX Cloud II</h6>
+              <p class="fw-bold text-light">Sonido envolvente y máxima comodidad</p>
+              <p class="text-success fw-bold h5 mb-0">$69.990</p>
+              <p class="text-decoration-line-through text-light">$79.990</p>
+              <button class="btn btn-primary w-100 mt-2">Agregar al carrito</button>
+              <a href="PRODUCTOS/audifonos.html" class="btn btn-primary w-100 mt-2">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0 oferta-card">
+            <img src="https://cdnx.jumpseller.com/compuelite/image/62384054/thumb/610/610?1744328062" class="card-img-top img-fluid" alt="PC Gamer Elite">
+            <div class="card-body bg-dark rounded-bottom">
+              <h6 class="text-muted small">PC Gamer Elite</h6>
+              <p class="fw-bold text-light">Intel Core i7 + 32GB RAM tarjeta 4090</p>
+              <p class="text-success fw-bold h5 mb-0">$779.990</p>
+              <p class="text-decoration-line-through text-light">$899.990</p>
+              <button class="btn btn-primary w-100 mt-2">Agregar al carrito</button>
+              <a href="PRODUCTOS/Pc gamer elite.html" class="btn btn-primary w-100 mt-2">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0 oferta-card">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sb18da7815a734c44b0ba99cff2bceeb6a.png_640x640.png" class="card-img-top img-fluid" alt="Control Xbox Series X">
+            <div class="card-body bg-dark rounded-bottom">
+              <h6 class="text-muted small">Control Xbox Series X</h6>
+              <p class="fw-bold text-light">Inalámbrico edición Doom Eternal</p>
+              <p class="text-success fw-bold h5 mb-0">$54.990</p>
+              <p class="text-decoration-line-through text-light">$59.990</p>
+              <button class="btn btn-primary w-100 mt-2">Agregar al carrito</button>
+              <a href="PRODUCTOS/Controlxbox.html" class="btn btn-primary w-100 mt-2">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 4 -->
+        <div class="col">
+          <div class="card h-100 shadow-lg border-0 oferta-card">
+            <img src="https://tienda.lancenter.cl/674-large_default/g502-heroe.jpg" class="card-img-top img-fluid" alt="Mouse Gamer Logitech G502 HERO">
+            <div class="card-body bg-dark rounded-bottom">
+              <h6 class="text-muted small"></h6>
+              <p class="fw-bold text-light">Mouse Gamer Logitech G502 HERO</p>
+              <p class="text-success fw-bold h5 mb-0">$39.990</p>
+              <p class="text-decoration-line-through text-light">$49.990</p>
+              <button class="btn btn-primary w-100 mt-2">Agregar al carrito</button>
+              <a href="PRODUCTOS/Mouse logitech.html" class="btn btn-primary w-100 mt-2">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Botón banner revisa catalogo -->
+  <div class="container mt-3">
+    <div class="catalogo-alert d-flex align-items-center rounded-4 p-3 mb-4">
+      <span class="catalogo-icon me-3">
+        <i class="bi bi-stars"></i>
+      </span>
+      <strong class="me-2 text-catalogo">¡Revisa todo nuestro catálogo <span class="anim-aqui">aquí</span> </strong>
+      <a href="Categotias.html" class="btn btn-info btn-sm ms-auto">
+        Ver catálogo
+      </a>
+    </div>
+  </div>
+
+
+
+  <!-- Botón soporte técnico WhatsApp -->
+  <div class="container my-3">
+    <a href="https://wa.me/5219999999999?text=Hola%20quiero%20consultar%20sobre%20soporte%20técnico" target="_blank" class="btn btn-success wsp-support">
+      <i class="bi bi-whatsapp"></i> Chat Soporte Técnico
+    </a>
+  </div>
+
+  <!-- Botones compartir redes sociales -->
+  <div class="container social-share my-4">
+    <span>Compartir:</span>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://tu-tienda.com/producto1"
+       target="_blank" class="btn-social facebook" title="Compartir en Facebook">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://twitter.com/intent/tweet?url=https://tu-tienda.com/producto1&text=¡Mira este producto gamer!"
+       target="_blank" class="btn-social twitter" title="Compartir en X">
+      <i class="bi bi-twitter-x"></i>
+    </a>
+    <a href="https://wa.me/?text=¡Mira%20este%20producto%20gamer%20en%20https://tu-tienda.com/producto1"
+       target="_blank" class="btn-social whatsapp" title="Compartir en WhatsApp">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="https://instagram.com/mi_tienda_gamer" target="_blank" class="btn-social instagram" title="Instagram">
+      <i class="bi bi-instagram"></i>
+    </a>
+  </div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Apartado Nosotros -->
+      <div class="col-md-6 mb-3">
+        <h5 class="text-uppercase text-info">Sobre Nosotros</h5>
+        <p class="text-light" style="text-align: justify;">
+          En <strong>Mi Tienda PC Gamer</strong>, compartimos tu pasión por la tecnología y el mundo gamer. 
+          Nuestra visión es ser líderes en la venta de <strong>computadoras de alto rendimiento</strong>, 
+          accesorios gamer y componentes de última generación, brindando siempre calidad, confianza 
+          y el mejor servicio. ¡Queremos llevar tu experiencia gaming al siguiente nivel! 🎮⚡
+        </p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="col-md-3 mb-3">
+        <h5 class="text-uppercase text-info">Contáctanos</h5>
+        <p class="mb-1"><i class="bi bi-envelope-fill"></i> soporte@mitiendagamer.com</p>
+        <p class="mb-1"><i class="bi bi-telephone-fill"></i> +56 9 9999 9999</p>
+        <p><i class="bi bi-geo-alt-fill"></i> Santiago, Chile</p>
+      </div>
+    </div>
+    <hr class="border-light">
+    <p class="text-center mb-0">© 2025 Mi Tienda PC Gamer. Todos los derechos reservados.</p>
+  </div>
+</footer>

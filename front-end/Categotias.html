@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    body {
+      background: linear-gradient(120deg, #0d1117 40%, #03ffe2 100%);
+      min-height: 100vh;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: #fff;
+    }
+
+    .catalogo-container {
+      background: rgba(17, 23, 42, 0.9);
+      box-shadow: 0 8px 25px rgba(3, 255, 226, 0.3);
+      border: 2px solid #03ffe2;
+      border-radius: 18px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 2rem 1rem 1.5rem 1rem;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .catalogo-title {
+      color: #03ffe2;
+      text-shadow: 0 2px 20px #03ffe2, 0 0 15px #1b1f3a;
+      font-weight: 900;
+      letter-spacing: 2px;
+      font-size: 2.5rem;
+    }
+
+    .list-group-item {
+      background: #1b1f3a;
+      color: #fff;
+      border: none;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      box-shadow: 0 3px 10px rgba(3, 255, 226, 0.15);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .list-group-item a {
+      display: block;
+      padding: 12px;
+      color: #03ffe2;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .list-group-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(3, 255, 226, 0.4);
+      background: #03ffe2;
+    }
+
+    .list-group-item:hover a {
+      color: #0d1117;
+      text-shadow: 0 0 8px #fff;
+    }
+
+    @media (max-width: 768px) {
+      .catalogo-title {
+        font-size: 1.7rem;
+      }
+      .list-group-item {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container catalogo-container">
+    <h1 class="text-center mb-4 catalogo-title">
+      <i class="bi bi-lightning-fill"></i> Categorías <i class="bi bi-lightning-fill"></i>
+    </h1>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <a href="Secciones/juegosdemesa.html"><i class="bi bi-controller"></i> Juegos de mesa</a>
+      </li>
+      <li class="list-group-item">
+        <a href="Secciones/accesorios.html"><i class="bi bi-headset"></i> Accesorios</a>
+      </li>
+      <li class="list-group-item">
+        <a href="Secciones/consolas.html"><i class="bi bi-xbox"></i> Consolas</a>
+      </li>
+      <li class="list-group-item">
+        <a href="Secciones/pcdeescirtorio.html"><i class="bi bi-pc-display"></i> Computadoras gamers</a>
+      </li>
+      <li class="list-group-item">
+        <a href="Secciones/SillasGamers.html"><i class="bi bi-chair"></i> Sillas gamer</a>
+      </li>
+      <li class="list-group-item">
+        <a href="Secciones/Mousepad.html"><i class="bi bi-mouse"></i> Mousepads</a>
+      </li>
+      <li class="list-group-item">
+        <a href="Secciones/Poleraspersonalizadas.html"><i class="bi bi-shirt"></i> Poleras y polerones personalizados</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

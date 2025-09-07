@@ -1,0 +1,197 @@
+  /* Botón de carrito */  /*------------------separacion--------------*/
+  .btn-add-cart {
+    background-color: #2532a4;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Botón de login */  /*------------------separacion---------------*/
+  .btn-login {
+    background-color: #222a50;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 2px 6px rgba(11, 195, 75, 0.08);
+    display: flex;
+    align-items: center;
+  }
+    /* Botón de login (size)*/  /*------------------separacion---------------*/
+  .btn-login i {
+    margin-right: 7px;
+    font-size: 1.2em;
+  }
+    /* Botón de login (cuando paso el mouse x encima)*/  /*------------------separacion---------------*/
+  .btn-login:hover,
+  .btn-login:focus {
+    background-color: #003cff;
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 12px rgba(0,60,255,0.13);
+  }
+  /*------------------separacion--baner cultura gamer-------------*/
+  .gamer-alert {
+    background: linear-gradient(90deg,#23293e 0%, #3242a8 100%);
+    color: #fff;
+    font-size: 1.15em;
+    border-radius: 12px;
+    padding: 14px 25px;
+    box-shadow: 0 4px 16px rgba(50,66,168,0.13);
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-left: 3px solid #03ffe2;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gamer-icon {
+    font-size: 1.7em;
+    margin-right: 14px;
+    color: #2108ad;
+    animation: gamerGlow 1.2s infinite alternate;
+  }
+  
+  @keyframes gamerGlow {
+    from { text-shadow: 0 0 6px #03ffe2, 0 0 0px #fff; }
+    to   { text-shadow: 0 0 16px #03ffe2, 0 0 10px #fff; }
+  }
+   /*------------------separacion--baner cultura gamer-------------*/
+  .gamer-link {
+    color: #03ffe2;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #03ffe2;
+    transition: color 0.2s, border-bottom 0.2s, text-shadow 0.2s;
+  }
+  
+  .gamer-link:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    text-shadow: 0 0 12px #240311;
+  }
+  
+  .r6s-characters {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 18px;
+    gap: 2px;
+  }
+  
+  .r6s-characters img {
+    height: 54px;
+    width: 44px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+    border: 2px solid #222a50;
+    box-shadow: 0 2px 10px rgba(0,60,255,0.11);
+  
+  }
+  
+ /*------------------separacion-fondo de color de pagina-y letras h1 y h2------------*/
+
+ body {
+  background: linear-gradient(135deg, #181c25 0%, #000000 100%);
+}
+.titulo-gamer, h1, h2 {
+  text-shadow: 0 2px 10px #ffffff, 0 0 4px #03ffe2;
+}
+ /*------------------separacion-de redes sociales integrada------------*/  
+ .social-share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+.social-share span {
+  font-weight: bold;
+  color: #03ffe2;
+}
+.btn-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  font-size: 1.6em;
+  color: #fff;
+  background: #222a50;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  text-decoration: none;
+  box-shadow: 0 2px 7px rgba(3,255,226,0.12);
+}
+/*------------------separacion de grandes ofertas ------------*/  
+.btn-social.facebook { background: #1877f2; }
+.btn-social.twitter { background: #000; }
+.btn-social.whatsapp { background: #25d366; }
+.btn-social.instagram { background: linear-gradient(45deg,#405de6,#5851db,#e1306c,#fd1d1d,#fcb045); }
+.btn-social:hover {
+  transform: scale(1.1);
+  filter: brightness(1.15);
+}
+.ofertas-banner {
+  background: linear-gradient(100deg,#222a50 35%,#03ffe2 100%);
+  box-shadow: 0 6px 22px rgba(3,255,226,0.18);
+  border: 2px solid #03ffe2;
+}
+.text-neon {
+  color: #03ffe2;
+  text-shadow: 0 2px 16px #03ffe2, 0 0 10px #222a50;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.oferta-card .card-body {
+  border-top: 2px solid #03ffe2;
+}
+.oferta-card .btn-primary {
+  background: #03ffe2;
+  color: #222a50;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 2px 8px rgba(3,255,226,0.13);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  
+}
+.oferta-card .btn-primary:hover {
+  background: #222a50;
+  color: #03ffe2;
+  transform: scale(1.04);
+}
+
+
+/*---------------------------------------------*//*---------------------------------------------*/
+.catalogo-alert {
+  background: linear-gradient(90deg, #252850 60%, #03ffe2 100%);
+  box-shadow: 0 2px 16px rgba(3,255,226,0.10);
+  border: 2px solid #03ffe2;
+}
+.catalogo-icon i {
+  color: #03ffe2;
+  font-size: 2em;
+  text-shadow: 0 2px 12px #03ffe2;
+}
+.text-catalogo {
+  color: #fff;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+.catalogo-alert .btn-info {
+  background: #03ffe2;
+  color: #222a50;
+  font-weight: bold;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+.catalogo-alert .btn-info:hover {
+  background: #222a50;
+  color: #03ffe2;
+}
+
+/*---------------------------------------------*//*---------------------------------------------*/
