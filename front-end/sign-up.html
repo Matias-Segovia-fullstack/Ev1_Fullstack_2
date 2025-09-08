@@ -11,7 +11,7 @@
 <body>
   <main class="signup-container">
     <div class="signup-brand">
-      <img src="imagenes/pixelogo.png" alt="Logo Gamer Tienda de Computadoras" />
+      <img src="imagenes.local/pixel.png" alt="Logo Gamer Tienda de Computadoras" />
       <span class="brand-name">Mi Tienda Pc gamer</span>
     </div>
     <h1 class="signup-title">Regístrate</h1>
@@ -21,7 +21,7 @@
       <input type="email" class="form-control" placeholder="Confirme Correo electrónico" maxlength="100" pattern="^([a-zA-Z0-9._%+-]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com))$" required>
       <input type="password" class="form-control" placeholder="Nueva Contraseña" minlength="4" maxlength="10" required>
       <input type="password" class="form-control" placeholder="Confirme Contraseña" minlength="4" maxlength="10" required>
-      <input type="number" class="form-control" placeholder="Numero de Telefono (Opcional)" minlength="9" maxlength="9">
+      <input type="text" class="form-control" placeholder="Numero de Telefono (Opcional)" inputmode="numeric" pattern="[0-9]{9}" minlength="9" maxlength="9">
 
       <div class="select-row">
         <select class="form-control" id="region" name="region" required>
@@ -43,7 +43,7 @@
             <option value="Aysén">Aysén del General Carlos Ibáñez del Campo</option>
             <option value="Magallanes">Magallanes y de la Antártica Chilena</option>
         </select>
-      <script src="Js/home.js"></script>
+      <script src="Js/sing-up.js"></script>
 
         <select class="form-control" id="comuna" name="comuna" required>
             <option value="">Seleccione Comuna</option>

@@ -48,6 +48,7 @@
         "Punta Arenas", "Laguna Blanca", "Río Verde", "San Gregorio", "Cabo de Hornos", "Antártica", "Porvenir", "Primavera", "Timaukel", "Natales", "Puerto Edén", "Torres del Paine"
       ]
     };
+     const signUpContainer = document.querySelector('.signup-container');
 
     document.getElementById('region').addEventListener('change', function() {
       const comunaSelect = document.getElementById('comuna');
@@ -62,3 +63,11 @@
         });
       }
     });
+
+      document.addEventListener('click', function(event) {
+    // Si el clic NO fue dentro del loginContainer
+    if (!signUpContainer.contains(event.target)) {
+      // Redirige al home principal (ajusta la ruta si es necesario)
+      window.location.href = 'http://127.0.0.1:3000/front-end/html'; 
+    }
+  });
