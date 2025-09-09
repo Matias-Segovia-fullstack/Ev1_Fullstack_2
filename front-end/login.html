@@ -15,9 +15,10 @@
       <span class="brand-name">Mi Tienda Pc gamer</span>
     </div>
     <h1 class="login-title">Iniciar Sesión</h1>
-    <form>
+    <form id="form-login">
         <input type="text" class="form-control" placeholder="Nombre Completo">
       <input type="email" class="form-control" placeholder="Correo electrónico" maxlength="100" pattern="^([a-zA-Z0-9._%+-]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com))$" required autofocus>
+      <div class="error-message" id="error-email-no"></div>
       <input type="password" class="form-control" placeholder="Contraseña" minlength="4" maxlength="10" required>
       <a href="rest_passt.html" class="rest-password">¿Olvidaste tu contraseña?</a>
       <button type="submit" class="btn-sign-in">
@@ -29,6 +30,7 @@
       <a href="sign-up.html" class="red-sign-up">Regístrate</a>
     </div>
     <script src="Js/to-home.js"></script>
+    <script src="Js/sing-up.js"></script>
   </main>
 </body>
 </html>

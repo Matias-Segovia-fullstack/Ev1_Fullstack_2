@@ -15,13 +15,35 @@
       <span class="brand-name">Mi Tienda Pc gamer</span>
     </div>
     <h1 class="signup-title">Regístrate</h1>
-    <form>
+    <form id="form-registro">
       <input type="text" class="form-control" placeholder="Nombre Completo" required>
-      <input type="email" class="form-control" placeholder="Correo electrónico" maxlength="100" pattern="^([a-zA-Z0-9._%+-]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com))$" required>
-      <input type="email" class="form-control" placeholder="Confirme Correo electrónico" maxlength="100" pattern="^([a-zA-Z0-9._%+-]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com))$" required>
-      <input type="password" class="form-control" placeholder="Nueva Contraseña" minlength="4" maxlength="10" required>
-      <input type="password" class="form-control" placeholder="Confirme Contraseña" minlength="4" maxlength="10" required>
-      <input type="text" class="form-control" placeholder="Numero de Telefono (Opcional)" inputmode="numeric" pattern="[0-9]{9}" minlength="9" maxlength="9">
+      <input type="email" class="form-control" 
+       placeholder="Correo electrónico" id="email" maxlength="100" pattern="^([a-zA-Z0-9._%+-]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com))$" required>
+      <div class="error-message" id="error-email"></div>
+      <input type="email" class="form-control" 
+            placeholder="Confirme Correo electrónico" 
+            id="email2" 
+            maxlength="100" 
+            pattern="^([a-zA-Z0-9._%+-]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com))$" 
+            required>
+      <div class="error-message" id="error-email2"></div>
+
+      <input type="password" class="form-control" 
+            placeholder="Contraseña" 
+            id="password" 
+            minlength="4" 
+            maxlength="10" 
+            required>
+      <div class="error-message" id="error-password"></div>
+
+      <input type="password" class="form-control" 
+            placeholder="Confirme Contraseña" 
+            id="password2" 
+            minlength="4" 
+            maxlength="10" 
+            required>
+      <div class="error-message" id="error-password2"></div>
+<input type="text" class="form-control" placeholder="Numero de Telefono (Opcional)" inputmode="numeric" pattern="[0-9]{9}" minlength="9" maxlength="9">
 
       <div class="select-row">
         <select class="form-control" id="region" name="region" required>

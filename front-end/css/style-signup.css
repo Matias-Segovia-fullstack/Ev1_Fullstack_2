@@ -19,6 +19,12 @@ body {
   margin: 32px auto;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 2px;
+  height: 16px; /* para que el espacio esté reservado */
+}
 .signup-brand {
   display: flex;
   flex-direction: column;
