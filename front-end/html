@@ -18,8 +18,15 @@
       <a class="navbar-brand mx-auto d-block" href="#">
         <img src="imagenes.local/pixel.png" alt="Logo Gamer Tienda de Computadoras" style="height: 170px; margin-right:83px;">
       </a>
-      <button class="btn btn-login me-2 position-absolute end-0" onclick="location.href='login.html'">
+      <button class="btn btn-login me-2 position-absolute end-0" 
+        style="top: 10px;"
+        onclick="location.href='login.html'">
         <i class="bi bi-person"></i> Iniciar sesión
+      </button>
+      <button class="btn btn-login admin position-absolute end-0 me-2" 
+        style="top: 70px;" 
+            onclick="location.href='administrador/homeAdministrador.html'">
+        <i class="bi bi-shield-lock"></i> Iniciar sesión admin
       </button>
     </div>
   </nav>
