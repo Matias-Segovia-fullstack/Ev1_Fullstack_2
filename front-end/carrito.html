@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="css/style-carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="gamer-alert">
+        <span class="gamer-icon"><i class="fas fa-shopping-cart"></i></span>
+        <span>¡Bienvenido a tu carrito! <a href="http://127.0.0.1:3000/html" class="gamer-link">Seguir comprando</a></span>
+    </div>
+    <h1 class="titulo-gamer">Carrito de compras</h1>
+    <div id="carrito"></div>
+    <div style="max-width:540px; margin:0 auto 24px auto;">
+        <span id="total-compra" class="text-neon" style="font-size:1.3em;">Aquí debería verse el total</span>
+    </div>
+    <div class="carrito-controles">
+        <button onclick="vaciarCarritoYMostrar()" class="btn-add-cart">
+            <i class="fas fa-trash-alt"></i> Vaciar carrito
+        </button>
+        <a href="http://127.0.0.1:3000/html" class="btn-login"><i class="fas fa-arrow-left"></i> Seguir comprando</a>
+        <button id="btn-pagar" class="btn-add-cart">
+            <i class="fas fa-credit-card"></i> Pagar
+        </button>
+    </div>
+    <script src="Js/carrito.js"></script>
+    <script>
+        function vaciarCarritoYMostrar() {
+            localStorage.removeItem('carrito');
+            mostrarCarrito();
+        }
+        document.getElementById('btn-pagar').onclick = function() {
+            localStorage.removeItem('carrito');
+            mostrarCarrito();
+            setTimeout(function() {
+                window.location.href = "http://127.0.0.1:3000/html";
+            }, 800);
+        };
+    </script>
+</body>
+</html>

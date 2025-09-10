@@ -5,7 +5,7 @@
     // Si el clic NO fue dentro del loginContainer
     if (!loginContainer.contains(event.target)) {
       // Redirige al home principal (ajusta la ruta si es necesario)
-      window.location.href = 'http://127.0.0.1:3000/front-end/html'; 
+      window.location.href = 'http://127.0.0.1:3000/html'; 
     }
   });
 
@@ -17,6 +17,6 @@
     // Si el clic NO fue dentro del loginContainer
     if (!olvideContainer.contains(event.target)) {
       // Redirige al home principal (ajusta la ruta si es necesario)
-      window.location.href = 'http://127.0.0.1:3000/front-end/html'; 
+      window.location.href = 'http://127.0.0.1:3000/html'; 
     }
   });

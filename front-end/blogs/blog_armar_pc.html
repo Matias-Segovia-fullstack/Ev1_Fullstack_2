@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejos para Armar tu PC Gamer - GameLegend</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a1a;
+            color: #e0e0ff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2a0a5e 0%, #0a0a1a 100%);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ff00ee;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 0 0 10px #7700ff, 0 0 20px #7700ff;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #aaccff;
+            margin-bottom: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(20, 20, 50, 0.7);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #00eeff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #0077ff;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #ccccff;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .tip-card {
+            background: linear-gradient(145deg, #1a1a3a, #0f0f2a);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #3344aa;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(100, 100, 255, 0.3);
+        }
+        
+        .tip-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #ff00aa, #7700ff);
+        }
+        
+        .tip-number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #7700ff;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            z-index: 2;
+        }
+        
+        .tip-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #4455aa;
+        }
+        
+        .tip-title {
+            font-size: 1.5rem;
+            color: #00ccff;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #3344aa;
+            padding-bottom: 10px;
+        }
+        
+        .tip-description {
+            color: #ccccff;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #3344aa;
+            color: #aaccff;
+        }
+        
+        @media (max-width: 768px) {
+            .tips-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        <div class="hero">
+            <h1>Consejos para Armar tu PC Gamer</h1>
+            <p>Aprende cómo construir la máquina de tus sueños con esta guía esencial para principiantes y expertos.</p>
+        </div>
+        
+        <div class="tips-grid">
+            <!-- Consejo 1 -->
+            <div class="tip-card">
+                <div class="tip-number">1</div>
+                <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Presupuesto para PC Gamer" class="tip-image">
+                <h2 class="tip-title">Define tu presupuesto</h2>
+                <p class="tip-description">Establece un presupuesto realista antes de comenzar. Esto te ayudará a tomar decisiones sobre qué componentes priorizar y evitará gastos innecesarios.</p>
+            </div>
+            
+            <!-- Consejo 2 -->
+            <div class="tip-card">
+                <div class="tip-number">2</div>
+                <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Componentes compatibles" class="tip-image">
+                <h2 class="tip-title">Verifica compatibilidad</h2>
+                <p class="tip-description">Asegúrate de que todos los componentes sean compatibles entre sí. Presta especial atención al socket de la CPU con la placa base y la RAM compatible.</p>
+            </div>
+            
+            <!-- Consejo 3 -->
+            <div class="tip-card">
+                <div class="tip-number">3</div>
+                <img src="https://cl-media.hptiendaenlinea.com/magefan_blog/Guia_de_compra_para_GPU_Como_escoger_la_tarjeta_grafica_indicada_1.jpg" alt="Tarjeta gráfica" class="tip-image">
+                <h2 class="tip-title">Invierte en una buena GPU</h2>
+                <p class="tip-description">La tarjeta gráfica es crucial para gaming. Asigna una parte significativa de tu presupuesto a una GPU que satisfaga tus necesidades de rendimiento.</p>
+            </div>
+            
+            <!-- Consejo 4 -->
+            <div class="tip-card">
+                <div class="tip-number">4</div>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_742828-MLU73079405419_112023-O.webp" alt="Fuente de poder" class="tip-image">
+                <h2 class="tip-title">No escatimes en la fuente de poder</h2>
+                <p class="tip-description">Una fuente de alimentación de calidad protege tus componentes de fluctuaciones de energía. Elige una con certificación 80 Plus y suficiente potencia.</p>
+            </div>
+            
+            <!-- Consejo 5 -->
+            <div class="tip-card">
+                <div class="tip-number">5</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFooWGSLHhqUI4IGGvjpciWtSngfFanDXovg&s" alt="Refrigeración PC" class="tip-image">
+                <h2 class="tip-title">Sistema de refrigeración adecuado</h2>
+                <p class="tip-description">Mantén tus componentes frescos con un buen sistema de refrigeración. Considera ventiladores adicionales o refrigeración líquida según tus necesidades.</p>
+            </div>
+            
+            <!-- Consejo 6 -->
+            <div class="tip-card">
+                <div class="tip-number">6</div>
+                <img src="https://i.ytimg.com/vi/vXpAsf7SJ3M/maxresdefault.jpg" alt="SSD para PC" class="tip-image">
+                <h2 class="tip-title">Incluye un SSD en tu build</h2>
+                <p class="tip-description">Un SSD acelerará significativamente los tiempos de carga del sistema y juegos. Idealmente, usa un SSD para el sistema operativo y un HDD para almacenamiento.</p>
+            </div>
+        </div>
+        <a href="http://127.0.0.1:3000/html" class="catalogo-link">← Volver a la pagina principal</a>
+        
+        <footer>
+            <p>© 2025 Gamer tienda de computadoras - Todos los derechos reservados</p>
+            <p>Consejos expertos para armar el PC gamer perfecto para tus necesidades.</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

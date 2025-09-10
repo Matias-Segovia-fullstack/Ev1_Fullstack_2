@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clásicos Legendarios - GameStore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a1a;
+            color: #e0e0ff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2a0a5e 0%, #0a0a1a 100%);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ff00ee;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 0 0 10px #7700ff, 0 0 20px #7700ff;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: #aaccff;
+            margin-bottom: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(20, 20, 50, 0.7);
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #00eeff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px #0077ff;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #ccccff;
+        }
+        
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .game-card {
+            background: linear-gradient(145deg, #1a1a3a, #0f0f2a);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #3344aa;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(100, 100, 255, 0.3);
+        }
+        
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #ff00aa, #7700ff);
+        }
+        
+        .game-number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #7700ff;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            z-index: 2;
+        }
+        
+        .game-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #4455aa;
+        }
+        
+        .game-title {
+            font-size: 1.5rem;
+            color: #00ccff;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #3344aa;
+            padding-bottom: 10px;
+        }
+        
+        .game-year {
+            color: #ff00aa;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .game-description {
+            color: #ccccff;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #3344aa;
+            color: #aaccff;
+        }
+        
+        @media (max-width: 768px) {
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+        
+        <div class="hero">
+            <h1>5 Leyendas de los Videojuegos</h1>
+            <p>Descubre los títulos que no solo definieron una era, sino que sentaron las bases de lo que hoy conocemos y amamos en la industria.</p>
+        </div>
+        
+        <div class="games-grid">
+            <!-- Juego 1 -->
+            <div class="game-card">
+                <div class="game-number">1</div>
+                <img src="https://preview.redd.it/lycuxhh6ksk01.png?width=1080&crop=smart&auto=webp&s=60516e657d896260ec5048a93e138d9b0bb56aab" alt="Doom (1993)" class="game-image">
+                <h2 class="game-title">Doom</h2>
+                <div class="game-year">1993</div>
+                <p class="game-description">El caos y la acción desenfrenada toman forma en este FPS pionero. Con una jugabilidad visceral y adictiva, Doom no solo popularizó el género de disparos en primera persona, sino que se convirtió en un fenómeno cultural imparable.</p>
+            </div>
+            
+            <!-- Juego 2 -->
+            <div class="game-card">
+                <div class="game-number">2</div>
+                <img src="https://i.blogs.es/4e6e7d/imagen-half-life/500_333.jpeg" alt="Half-Life (1998)" class="game-image">
+                <h2 class="game-title">Half-Life</h2>
+                <div class="game-year">1998</div>
+                <p class="game-description">Más que un simple shooter, Half-Life es una experiencia narrativa magistral. Siguiendo la silenciosa odisea del científico Gordon Freeman, revolucionó la narrativa en los videojuegos al sumergir al jugador en un mundo creíble sin recurrir a cutscenes.</p>
+            </div>
+            
+            <!-- Juego 3 -->
+            <div class="game-card">
+                <div class="game-number">3</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg6HuiilyDJN-fYLvrnfpo8pxPP4J9Q6bptg&s" alt="StarCraft (1998)" class="game-image">
+                <h2 class="game-title">StarCraft</h2>
+                <div class="game-year">1998</div>
+                <p class="game-description">La estrategia en tiempo real alcanzó su cénit con este título. Con tres razas únicas y un equilibrio casi perfecto, creó un ecosistema competitivo legendario que dominó las competiciones y solidificó a Corea del Sur como la meca del gaming profesional.</p>
+            </div>
+            
+            <!-- Juego 4 -->
+            <div class="game-card">
+                <div class="game-number">4</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr13l1fE39omWLjEwbmiHgGahm-q9mjaQgCQ&s" alt="Diablo II (2000)" class="game-image">
+                <h2 class="game-title">Diablo II</h2>
+                <div class="game-year">2000</div>
+                <p class="game-description">Adéntrate en un mundo gótico de pesadilla y demonios. Este RPG de acción es el paradigma del "solo una misión más". Con un sistema de loot infinitamente gratificante y una atmósfera oscura e inquietante.</p>
+            </div>
+            
+            <!-- Juego 5 -->
+            <div class="game-card">
+                <div class="game-number">5</div>
+                <img src="https://elchapuzasinformatico.com/wp-content/uploads/2019/04/Age-of-Empires-II.jpg" alt="Age of Empires II (1999)" class="game-image">
+                <h2 class="game-title">Age of Empires II</h2>
+                <div class="game-year">1999</div>
+                <p class="game-description">Un viaje épico a través de la historia. Desde la Edad Media hasta el Renacimiento, este juego de estrategia combina una jugabilidad profunda, una campaña histórica educativa y una longevidad envidiable.</p>
+            </div>
+        </div>
+        <a href="http://127.0.0.1:3000/html" class="catalogo-link">← Volver a la pagina principal</a>
+        <footer>
+            <p>© 2025 Gamer tienda de computadoras - Todos los derechos reservados</p>
+            <p>Estos cinco pilares no son solo juegos; son la herencia que todo jugador debe conocer.</p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

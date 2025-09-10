@@ -129,3 +129,13 @@ formLogin.addEventListener("submit", (event) => {
   document.getElementById("form-registro").reset();
   document.getElementById("comuna").innerHTML = '<option value="">Seleccione Comuna</option>';
 });
+
+const signUpContainer = document.querySelector('.signup-container');
+
+document.addEventListener('click', function(event) {
+    // Si el clic NO fue dentro del loginContainer
+    if (!signUpContainer.contains(event.target)) {
+      // Redirige al home principal (ajusta la ruta si es necesario)
+      window.location.href = 'http://127.0.0.1:3000/html'; 
+    }
+  });
